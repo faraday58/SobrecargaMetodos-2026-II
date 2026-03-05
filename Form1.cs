@@ -15,9 +15,26 @@ namespace SobrecargaMetodos_2026_II
             lbSuma.Text = resultado.ToString();
 
         }
+       
+
+        private void btnSumar1_Click(object sender, EventArgs e)
+        {
+            float sumando1 = float.Parse(txtbSumando11.Text);
+            float sumando2 = float.Parse(txtbSumando12.Text);
+            float sumando3 = float.Parse(txtbSumando13.Text);
+            float resultado = sumar(sumando1, sumando2, sumando3);
+
+            lbSuma1.Text = resultado.ToString();
+        }
+
         private float sumar(float sumando1, float sumando2)
         {
             return sumando1 + sumando2;
+        }
+
+        private float sumar(float sumando1,float sumando2, float sumando3)
+        {
+            return sumando1 + sumando2 + sumando3;
         }
     }
 }
